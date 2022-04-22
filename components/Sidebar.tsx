@@ -1,3 +1,4 @@
+import { useTheme } from "next-themes";
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
@@ -11,6 +12,10 @@ import { ImMobile } from "react-icons/im";
 import { MdOutlineAlternateEmail } from "react-icons/md";
 
 const Sidebar = () => {
+  const { theme, setTheme } = useTheme();
+  const themeToggler = () => {
+    setTheme(theme === "light" ? "dark" : "light");
+  };
   return (
     <div>
       <img
@@ -61,8 +66,11 @@ const Sidebar = () => {
       >
         Email me
       </button>
-      <button className="bg-gradient-to-r from-blue-400 to-green-300 w-8/12 py-2 px-5 rounded-full my-2">
-        Dark Mode
+      <button
+        className="bg-gradient-to-r from-blue-400 to-green-300 w-8/12 py-2 px-5 rounded-full my-2"
+        onClick={themeToggler}
+      >
+        Toggle Theme
       </button>
     </div>
   );

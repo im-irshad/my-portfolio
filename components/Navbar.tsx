@@ -45,14 +45,32 @@ export const Navbar = () => {
         <NavItem
           activepage={activepage}
           setActivePage={setActivePage}
-          name="Projects"
-          route="/projects"
+          name="Education"
+          route="/Education"
         />
         <NavItem
           activepage={activepage}
           setActivePage={setActivePage}
-          name="Resume"
-          route="/resume"
+          name="Work Experience"
+          route="/WorkExp"
+        />
+        <NavItem
+          activepage={activepage}
+          setActivePage={setActivePage}
+          name="Technical Skills"
+          route="/TechSkills"
+        />
+        <NavItem
+          activepage={activepage}
+          setActivePage={setActivePage}
+          name="Certifications"
+          route="/Certs"
+        />
+        <NavItem
+          activepage={activepage}
+          setActivePage={setActivePage}
+          name="Other"
+          route="/Etc"
         />
       </div>
     </div>

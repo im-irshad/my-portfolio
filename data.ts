@@ -1,120 +1,214 @@
+import { ImMenu } from "react-icons/im";
 import { RiComputerLine } from "react-icons/ri";
-import { IService, ISkill } from "./types";
+import { ICert, IEducation, IExperience, IService, ISkill } from "./types";
+import { FaDatabase } from "react-icons/fa";
+import {
+  SiExpress,
+  SiGit,
+  SiHtml5,
+  SiMongodb,
+  SiNextdotjs,
+  SiNodedotjs,
+  SiPostgresql,
+  SiPostman,
+  SiPurescript,
+} from "react-icons/si";
+import { FaUniversity } from "react-icons/fa";
+import { IoMdCodeWorking } from "react-icons/io";
+import { FaNetworkWired } from "react-icons/fa";
+import { GrUserWorker } from "react-icons/gr";
+import {
+  SiUdemy,
+  SiFreecodecamp,
+  SiJavascript,
+  SiTypescript,
+  SiRedux,
+  SiSass,
+  SiMaterialui,
+} from "react-icons/si";
 
 export const services: IService[] = [
   {
     title: "Frontend Developer",
-    about: "Lorem ipsum....",
+    about:
+      "I can make user friendly, attractive and scalable frontend using technologies like React, CSS & HTML. *Learning NextJS now a days*",
     Icon: RiComputerLine,
   },
   {
     title: "Backend Developer",
-    about: "Lorem ipsum ...",
-    Icon: RiComputerLine,
+    about:
+      " I have Experience working with backend services like Express & Nodejs ",
+    Icon: ImMenu,
   },
   {
-    title: "Frontend Developer",
-    about: "Lorem ipsum....",
-    Icon: RiComputerLine,
+    title: "Programming Languages",
+    about: "I can code with Typescript & Javascript",
+    Icon: SiPurescript,
   },
   {
-    title: "Backend Developer",
-    about: "Lorem ipsum ...",
-    Icon: RiComputerLine,
-  },
-  {
-    title: "Frontend Developer",
-    about: "Lorem ipsum....",
-    Icon: RiComputerLine,
-  },
-  {
-    title: "Backend Developer",
-    about: "Lorem ipsum ...",
-    Icon: RiComputerLine,
-  },
-];
-export const Languages: ISkill[] = [
-  {
-    Icon: RiComputerLine,
-    name: "React",
-    level: "70%",
-  },
-  {
-    Icon: RiComputerLine,
-    name: "Java Script",
-    level: "70%",
-  },
-  {
-    Icon: RiComputerLine,
-    name: "Type Script",
-    level: "70%",
-  },
-  {
-    Icon: RiComputerLine,
-    name: "Bootstrap",
-    level: "70%",
-  },
-  {
-    Icon: RiComputerLine,
-    name: "Html/CSS",
-    level: "70%",
-  },
-  {
-    Icon: RiComputerLine,
-    name: "Express JS",
-    level: "70%",
-  },
-  {
-    Icon: RiComputerLine,
-    name: "MangoDB",
-    level: "70%",
-  },
-  {
-    Icon: RiComputerLine,
-    name: "PostgreSql",
-    level: "70%",
+    title: "Databases",
+    about: " Experience working with mongodb & postgresql",
+    Icon: FaDatabase,
   },
 ];
 
-export const tools: ISkill[] = [
+export const Languages: ISkill[] = [
   {
-    Icon: RiComputerLine,
+    Icon: SiJavascript,
+    name: "Javascript",
+    level: "80%",
+  },
+  {
+    Icon: SiTypescript,
+    name: "Typescript",
+    level: "60%",
+  },
+];
+
+export const Frontend: ISkill[] = [
+  {
+    Icon: SiJavascript,
     name: "React",
-    level: "70%",
+    level: "80%",
   },
   {
-    Icon: RiComputerLine,
-    name: "Java Script",
-    level: "70%",
+    Icon: SiNextdotjs,
+    name: "Next JS",
+    level: "60%",
   },
   {
-    Icon: RiComputerLine,
-    name: "Type Script",
-    level: "70%",
+    Icon: SiHtml5,
+    name: "HTML & CSS",
+    level: "60%",
   },
   {
-    Icon: RiComputerLine,
-    name: "Bootstrap",
-    level: "70%",
+    Icon: SiSass,
+    name: "SCSS",
+    level: "60%",
   },
   {
-    Icon: RiComputerLine,
-    name: "Html/CSS",
-    level: "70%",
+    Icon: SiMaterialui,
+    name: "Material UI",
+    level: "60%",
   },
   {
-    Icon: RiComputerLine,
+    Icon: SiTypescript,
+    name: "tailwindcss",
+    level: "60%",
+  },
+];
+
+export const Backend: ISkill[] = [
+  {
+    Icon: SiNodedotjs,
+    name: "Node JS",
+    level: "80%",
+  },
+  {
+    Icon: SiExpress,
     name: "Express JS",
-    level: "70%",
+    level: "60%",
+  },
+];
+
+export const Database: ISkill[] = [
+  {
+    Icon: SiMongodb,
+    name: "Mongodb",
+    level: "80%",
   },
   {
-    Icon: RiComputerLine,
-    name: "MangoDB",
-    level: "70%",
+    Icon: SiPostgresql,
+    name: "Postgresql",
+    level: "60%",
+  },
+];
+
+export const Others: ISkill[] = [
+  {
+    Icon: SiGit,
+    name: "GIT",
+    level: "80%",
   },
   {
-    Icon: RiComputerLine,
-    name: "PostgreSql",
-    level: "70%",
+    Icon: SiPostman,
+    name: "Postman",
+    level: "60%",
+  },
+];
+
+export const EducationDetail: IEducation[] = [
+  {
+    Icon: FaUniversity,
+    Degree: "Ms. Computer Engineering (AI)",
+    University: "Dalarna University.",
+    Location: "Sweden",
+    Year: 2010,
+  },
+  {
+    Icon: FaUniversity,
+    Degree: "Bs Computer Science",
+    University: "AIOU University.",
+    Location: "Pakistan",
+    Year: 2008,
+  },
+];
+
+export const ExpDetail: IExperience[] = [
+  {
+    Icon: IoMdCodeWorking,
+    JobTitle: "FULL STACK DEVELOPER (Trainee, Remote)",
+    Company: "Integrigy.io",
+    Location: "Helsinki",
+    Responsibilities: "",
+    Duration: "Jan 2022 - Untill Now",
+  },
+  {
+    Icon: FaNetworkWired,
+    JobTitle: "Snr. System Support Eng.",
+    Company: "TMN Group",
+    Location: "Islamabad",
+    Responsibilities: "",
+    Duration: "Feb. 2007 - Feb. 2009 ",
+  },
+  {
+    Icon: GrUserWorker,
+    JobTitle: "Stock Associate",
+    Company: "Nemlig.com",
+    Location: "Denmark",
+    Responsibilities: "",
+    Duration: "Dec 2012 - Dec 2021",
+  },
+];
+
+export const CertInfo: ICert[] = [
+  {
+    Icon: SiUdemy,
+    CourseTitle: "FullStack Bootcamp",
+    Company: "Udemy.com",
+    CourseDetail: "",
+    Duration: "April 2021 - June 2021",
+  },
+
+  {
+    Icon: SiFreecodecamp,
+    CourseTitle: "Responsive Web Design cert.",
+    Company: "FreeCodeCamp.com",
+    CourseDetail: "",
+    Duration: "Aug 2021 - Oct 2021",
+  },
+  {
+    Icon: SiFreecodecamp,
+    CourseTitle: "JS Algorithms & Data Structure",
+    Company: "FreeCodeCamp.com",
+    CourseDetail: "",
+    Duration: "Oct 2021 - Dec 2021",
+  },
+  {
+    Icon: SiFreecodecamp,
+    CourseTitle: "Front End Development Libraries Cert.",
+    Company: "FreeCodeCamp.com",
+    CourseDetail: "",
+    Duration: "June 2021 - Aug 2021",
   },
 ];

@@ -12,7 +12,7 @@ function index() {
       <div className="p-4 my-5 bg-gray-300 flex-grow">
         <h6 className="my-3 text_xl font-bold">What I Offer</h6>
 
-        <div className="grid gap-6 lg:grid-cols-2 ">
+        <div className="grid gap-6  ">
           {services.map((service) => (
             <div
               key={service.title}
