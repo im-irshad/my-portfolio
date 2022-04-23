@@ -19,9 +19,11 @@ const Sidebar = () => {
   };
   return (
     <div>
-      <img
-        src="https://media-exp1.licdn.com/dms/image/C4E03AQGFII3UfCkS7g/profile-displayphoto-shrink_800_800/0/1649559312468?e=1655942400&v=beta&t=Jz0fvfbf-TmyjxW-7LxZGflwPJbzw4s38ielvtxFOpY"
+      <Image
+        src="/1649559312468.jpg"
         alt="my image"
+        width={200}
+        height={200}
         className="w-32 h-32 rounded-full mx-auto"
       />
       <h3 className="my-4 text-3xl text-yellow font-medium tracking-wider font-Courgette">

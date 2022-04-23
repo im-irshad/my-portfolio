@@ -29,7 +29,7 @@ export const Navbar = () => {
     if (pathname === "/") setActivePage("About");
     if (pathname === "/projects") setActivePage("Projects");
     if (pathname === "/resume") setActivePage("Resume");
-  }, []);
+  }, [pathname]);
   return (
     <div className="flex justify-between px-5 py-3 my-3">
       <span className="text-xl font-bold border-b-4 text-orange">
