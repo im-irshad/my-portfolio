@@ -10,7 +10,7 @@ import {
   ISkill,
   ISSkills,
 } from "./types";
-import { FaDatabase, FaRegCheckSquare } from "react-icons/fa";
+import { FaDatabase, FaRegCheckSquare, FaWarehouse } from "react-icons/fa";
 import {
   SiExpress,
   SiGit,
@@ -188,7 +188,7 @@ export const ExpDetail: IExperience[] = [
     Duration: "Feb. 2007 - Feb. 2009 ",
   },
   {
-    Icon: GrUserWorker,
+    Icon: FaWarehouse,
     JobTitle: "Stock Associate",
     Company: "Nemlig.com",
     Location: "Denmark",

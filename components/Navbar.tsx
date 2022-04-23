@@ -52,7 +52,7 @@ export const Navbar = () => {
           activepage={activepage}
           setActivePage={setActivePage}
           name="Work Experience"
-          route="/WorkExp"
+          route="/workexp"
         />
         <NavItem
           activepage={activepage}
@@ -70,7 +70,7 @@ export const Navbar = () => {
           activepage={activepage}
           setActivePage={setActivePage}
           name="Others"
-          route="/Etc"
+          route="/Others"
         />
       </div>
     </div>

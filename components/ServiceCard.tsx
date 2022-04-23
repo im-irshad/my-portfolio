@@ -6,10 +6,10 @@ const ServiceCard: FC<{ service: IService }> = ({
 }) => {
   return (
     <div className="p-2 flex items-center space-x-4">
-      <Icon className="w-12 h-12 text-red-500" />
+      <Icon className="w-12 h-12 text-orange" />
       <div>
-        <h4 className="font-bold">{title}</h4>
-        <p>{about}</p>
+        <h4 className="font-bold text-dblue">{title}</h4>
+        <p className="text-bblue">{about}</p>
       </div>
     </div>
   );
