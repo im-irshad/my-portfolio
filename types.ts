@@ -1,3 +1,4 @@
+import { SingletonRouter } from "next/router";
 import { IconType } from "react-icons";
 
 export interface IService {
@@ -33,4 +34,19 @@ export interface ICert {
   Company: string;
   CourseDetail: string;
   Duration: string;
+}
+
+export interface ISSkills {
+  Icon: IconType;
+  sskil: string;
+}
+
+export interface ILang {
+  Icon: IconType;
+  name: string;
+}
+
+export interface IInterest {
+  Icon: IconType;
+  name: string;
 }

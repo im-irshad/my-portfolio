@@ -69,7 +69,7 @@ export const Navbar = () => {
         <NavItem
           activepage={activepage}
           setActivePage={setActivePage}
-          name="Other"
+          name="Others"
           route="/Etc"
         />
       </div>

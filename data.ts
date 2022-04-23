@@ -1,7 +1,16 @@
 import { ImMenu } from "react-icons/im";
 import { RiComputerLine } from "react-icons/ri";
-import { ICert, IEducation, IExperience, IService, ISkill } from "./types";
-import { FaDatabase } from "react-icons/fa";
+import {
+  ICert,
+  IEducation,
+  IExperience,
+  IInterest,
+  ILang,
+  IService,
+  ISkill,
+  ISSkills,
+} from "./types";
+import { FaDatabase, FaRegCheckSquare } from "react-icons/fa";
 import {
   SiExpress,
   SiGit,
@@ -12,11 +21,17 @@ import {
   SiPostgresql,
   SiPostman,
   SiPurescript,
+  SiNetflix,
+  SiCounterstrike,
+  SiYourtraveldottv,
+  SiCodingninjas,
 } from "react-icons/si";
 import { FaUniversity } from "react-icons/fa";
 import { IoMdCodeWorking } from "react-icons/io";
 import { FaNetworkWired } from "react-icons/fa";
-import { GrUserWorker } from "react-icons/gr";
+import { GrLanguage, GrUserWorker } from "react-icons/gr";
+import { GiCricketBat } from "react-icons/gi";
+
 import {
   SiUdemy,
   SiFreecodecamp,
@@ -26,6 +41,7 @@ import {
   SiSass,
   SiMaterialui,
 } from "react-icons/si";
+import { MdLanguage, MdSportsSoccer } from "react-icons/md";
 
 export const services: IService[] = [
   {
@@ -210,5 +226,74 @@ export const CertInfo: ICert[] = [
     Company: "FreeCodeCamp.com",
     CourseDetail: "",
     Duration: "June 2021 - Aug 2021",
+  },
+];
+
+export const SoftSkills: ISSkills[] = [
+  {
+    Icon: FaRegCheckSquare,
+    sskil: "Team Player",
+  },
+  {
+    Icon: FaRegCheckSquare,
+    sskil: "Flexible",
+  },
+  {
+    Icon: FaRegCheckSquare,
+    sskil: "Creative",
+  },
+  {
+    Icon: FaRegCheckSquare,
+    sskil: "Quick Adaptor",
+  },
+  {
+    Icon: FaRegCheckSquare,
+    sskil: "Problem Solver",
+  },
+  {
+    Icon: FaRegCheckSquare,
+    sskil: "Quick Learner",
+  },
+];
+
+export const Lang: ILang[] = [
+  {
+    Icon: MdLanguage,
+    name: "English",
+  },
+  {
+    Icon: MdLanguage,
+    name: "Dansk",
+  },
+  {
+    Icon: MdLanguage,
+    name: "Urdu",
+  },
+];
+
+export const Interest: IInterest[] = [
+  {
+    Icon: SiCodingninjas,
+    name: "Coding",
+  },
+  {
+    Icon: SiYourtraveldottv,
+    name: "Travelling",
+  },
+  {
+    Icon: MdSportsSoccer,
+    name: "Sports",
+  },
+  {
+    Icon: SiCounterstrike,
+    name: "Gaming",
+  },
+  {
+    Icon: SiNetflix,
+    name: "Netflix",
+  },
+  {
+    Icon: GiCricketBat,
+    name: "Cricket",
   },
 ];
