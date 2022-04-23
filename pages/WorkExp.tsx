@@ -1,7 +1,7 @@
 import React from "react";
 import { ExpDetail } from "../data";
 
-const workexp = () => {
+const WorkExp = () => {
   return (
     <div className="px-4 pt-1">
       <div className="p-4 my-5 bg-gray-300 flex-grow">
@@ -30,4 +30,4 @@ const workexp = () => {
   );
 };
 
-export default workexp;
+export default WorkExp;

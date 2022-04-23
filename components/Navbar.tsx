@@ -52,7 +52,7 @@ export const Navbar = () => {
           activepage={activepage}
           setActivePage={setActivePage}
           name="Work Experience"
-          route="/workexp"
+          route="/WorkExp"
         />
         <NavItem
           activepage={activepage}
