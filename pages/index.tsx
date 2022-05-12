@@ -6,11 +6,10 @@ function index() {
     <div className="flex flex-col px-6 pt-1 flex-grow">
       <a
         href={
-          "facebook://sharer/sharer.php?u=http://localhost:3000/se/sv/happyinvite?utm_source=referral&utm_medium=happyinvite&invitationCode=fowlat-vy44z978"
+          "whatsapp://send?text=http://localhost:3000/se/sv/happyinvite?utm_source=referral&utm_medium=happyinvite&invitationCode=fowlat-vy44z978"
         }
-        data-action="share/facebook/share"
       >
-        invite fb new
+        whatsapp
       </a>
       <a
         href={
@@ -22,14 +21,7 @@ function index() {
       <a href="https://www.facebook.com/sharer/sharer.php?u=https%3A//www.facebook.com/sharer/sharer.php?u=http%3A//localhost%3A3000/se/sv/happyinvite?utm_source=referral%26utm_medium=happyinvite%26invitationCode=fowlat-vy44z978">
         Share on Facebook
       </a>
-      // eslint-disable-next-line react/jsx-no-target-blank
-      <a
-        href="https://www.facebook.com/sharer.php?u=http://localhost:3000/se/sv/happyinvite?utm_source=referral&utm_medium=happyinvite&invitationCode=fowlat-vy44z978"
-        target="_blank"
-        rel="nofollow noopener"
-      >
-        Share on FaceBook
-      </a>
+
       <h5 className="my-3 font-medium text-bblue">
         I am a passionate IT-professional with an experience of working with
         Javascript, Typescript, React, Express, Node and MongoDB. Eager to learn
