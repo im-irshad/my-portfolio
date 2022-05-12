@@ -6,7 +6,7 @@ function index() {
     <div className="flex flex-col px-6 pt-1 flex-grow">
       <a
         href={
-          "whatsapp://send?text=http://staging.bygoodiebox.com/se/sv/happyinvite?utm_source=referral&utm_medium=happyinvite&invitationCode=fowlat-vy44z978"
+          "https://api.whatsapp.com/send?text=http://staging.bygoodiebox.com/se/sv/happyinvite?utm_source=referral&utm_medium=happyinvite&invitationCode=fowlat-vy44z978"
         }
         data-action="share/whatsapp/share"
       >
