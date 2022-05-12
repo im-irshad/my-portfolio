@@ -6,9 +6,9 @@ function index() {
     <div className="flex flex-col px-6 pt-1 flex-grow">
       <a
         href={
-          "https://www.facebook.com/sharer/sharer.php?u=http://localhost:3000/se/sv/happyinvite?utm_source=referral&utm_medium=happyinvite&invitationCode=fowlat-vy44z978"
+          "https://api.facebook.com/sharer/sharer.php?u=http://localhost:3000/se/sv/happyinvite?utm_source=referral&utm_medium=happyinvite&invitationCode=fowlat-vy44z978"
         }
-        data-action="share/whatsapp/share"
+        data-action="share/facebook/share"
       >
         invite fb
       </a>
@@ -16,7 +16,6 @@ function index() {
         href={
           "fb-messenger://share/?link=http://localhost:3000/se/sv/happyinvite?utm_source=referral&utm_medium=happyinvite&invitationCode=fowlat-vy44z978"
         }
-        data-action="share/whatsapp/share"
       >
         invite fb mess
       </a>
