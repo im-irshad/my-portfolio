@@ -6,11 +6,11 @@ function index() {
     <div className="flex flex-col px-6 pt-1 flex-grow">
       <a
         href={
-          "https://api.whatsapp.com/send?text=https%3A%2F%2Fwa.me%3Ftext%3Dhttp%3A%2F%2Fstaging.bygoodiebox.com%2Fse%2Fsv%2Fhappyinvite%3Futm_source%3Dreferral%26utm_medium%3Dhappyinvite%26invitationCode%3Dfowlat-vy44z978"
+          "https://api.whatsapp.com/send?text=http%3A%2F%2Fstaging.bygoodiebox.com%2Fse%2Fsv%2Fhappyinvite%3Futm_source%3Dreferral%26utm_medium%3Dhappyinvite%26invitationCode%3Dfowlat-vy44z978"
         }
         data-action="share/whatsapp/share"
       >
-        invite new2
+        invite whatsapp
       </a>
       <h5 className="my-3 font-medium text-bblue">
         I am a passionate IT-professional with an experience of working with
