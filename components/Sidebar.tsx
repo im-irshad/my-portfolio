@@ -1,3 +1,4 @@
+import { motion } from "framer-motion";
 import { useTheme } from "next-themes";
 import Image from "next/image";
 import Link from "next/link";
@@ -11,6 +12,7 @@ import {
 } from "react-icons/gr";
 import { ImMobile } from "react-icons/im";
 import { MdLocationOn, MdOutlineAlternateEmail } from "react-icons/md";
+import { RiGitBranchFill } from "react-icons/ri";
 
 const Sidebar = () => {
   const { theme, setTheme } = useTheme();
@@ -26,10 +28,10 @@ const Sidebar = () => {
         height={200}
         className="w-32 h-32 rounded-full mx-auto"
       />
-      <h3 className="my-4 text-3xl text-yellow font-medium tracking-wider font-Courgette">
+      <motion.h3 className="my-4 text-3xl text-yellow font-medium tracking-wider font-Courgette">
         <span className="text-dblue">Irshad </span>
         Muhammad
-      </h3>
+      </motion.h3>
       <p className="px-2 py-1 my-3 bg-gray-300 rounded-full text-dblue">
         Full-Stack Developer
       </p>
@@ -60,18 +62,34 @@ const Sidebar = () => {
           +4560888636
         </p>
       </div>
-      <button
+      <motion.button
+        animate={{
+          rotateZ: 360,
+        }}
+        whileHover={{
+          scale: 1.5,
+          textShadow: "0px 0px 8px rgb(0,0,0)",
+          boxShadow: "0px 0px 8px rgb(0,0,0)",
+        }}
         className="bg-gradient-to-r from-blue-400 to-green-300 w-12/12 py-2 px-5 rounded-full my-3"
         onClick={() => window.open("mailto:imabbasi@msn.com")}
       >
         Email me
-      </button>
-      <button
-        className="bg-gradient-to-r from-green-400 to-blue-500 hover:from-pink-500 hover:to-yellow-500 w-12/12 py-2 px-5 rounded-full my-2 text-white font-bold"
+      </motion.button>
+      <motion.button
+        animate={{
+          rotateZ: 360,
+        }}
+        whileHover={{
+          scale: 1.5,
+          textShadow: "0px 0px 8px rgb(0,0,0)",
+          boxShadow: "0px 0px 8px rgb(0,0,0)",
+        }}
+        className="bg-gradient-to-r from-green-400 to-blue-500   w-12/12 py-2 px-5 rounded-full my-2 text-white font-bold"
         onClick={themeToggler}
       >
         Toggle Theme
-      </button>
+      </motion.button>
     </div>
   );
 };

@@ -1,9 +1,15 @@
+import { motion } from "framer-motion";
 import ServiceCard from "../components/ServiceCard";
 import { services } from "../data";
 
 function index() {
   return (
-    <div className="flex flex-col px-6 pt-1 flex-grow">
+    <motion.div
+      initial={{ x: "100vw" }}
+      animate={{ x: 0 }}
+      transition={{ type: "spring", delay: 0.5 }}
+      className="flex flex-col px-6 pt-1 flex-grow"
+    >
       <h5 className="my-3 font-medium text-bblue">
         I am a passionate IT-professional with an experience of working with
         Javascript, Typescript, React, Express, Node and MongoDB. Eager to learn
@@ -23,7 +29,7 @@ function index() {
           ))}
         </div>
       </div>
-    </div>
+    </motion.div>
   );
 }
 

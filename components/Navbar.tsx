@@ -1,3 +1,4 @@
+import { motion } from "framer-motion";
 import Link from "next/link";
 import { useRouter } from "next/router";
 import React, { FC, useEffect, useState } from "react";
@@ -32,10 +33,19 @@ export const Navbar = () => {
   }, [pathname]);
   return (
     <div className="flex justify-between px-5 py-3 my-3">
-      <span className="text-xl font-bold border-b-4 text-orange">
+      <motion.span
+        initial={{ y: -250 }}
+        animate={{ y: -10 }}
+        className="text-xl font-bold border-b-4 text-orange"
+      >
         {activepage}
-      </span>
-      <div className="text-dblue font-bold flex space-x-5">
+      </motion.span>
+      <motion.div
+        initial={{ x: "100vw" }}
+        animate={{ x: 0 }}
+        transition={{ type: "spring", delay: 0.5 }}
+        className="text-dblue font-bold flex space-x-5"
+      >
         <NavItem
           activepage={activepage}
           setActivePage={setActivePage}
@@ -72,7 +82,7 @@ export const Navbar = () => {
           name="Others"
           route="/Others"
         />
-      </div>
+      </motion.div>
     </div>
   );
 };
