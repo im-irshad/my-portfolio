@@ -8,6 +8,10 @@ function index() {
       initial={{ x: "100vw" }}
       animate={{ x: 0 }}
       transition={{ type: "spring", delay: 0.5 }}
+      exit={{
+        x: "-100vw",
+        transition: { ease: "easeOut" },
+      }}
       className="flex flex-col px-6 pt-1 flex-grow"
     >
       <h5 className="my-3 font-medium text-bblue">

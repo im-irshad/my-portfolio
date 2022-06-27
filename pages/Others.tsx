@@ -1,9 +1,19 @@
+import { motion } from "framer-motion";
 import React from "react";
 import { Interest, Lang, SoftSkills } from "../data";
 
 const Others = () => {
   return (
-    <div className="px-4 pt-1 ">
+    <motion.div
+      initial={{ x: "100vw" }}
+      animate={{ x: 0 }}
+      transition={{ type: "spring", delay: 0.5 }}
+      exit={{
+        x: "-100vw",
+        transition: { ease: "easeOut" },
+      }}
+      className="px-4 pt-1 "
+    >
       <div className="p-4 my-5 bg-gray-300 flex-grow">
         <h2 className="my-3 text-xl font-bold text-dblue">Soft Skills</h2>
         <div className=" grid gap-6 md:grid-cols-3 ">
@@ -51,7 +61,7 @@ const Others = () => {
           ))}
         </div>
       </div>
-    </div>
+    </motion.div>
   );
 };
 
