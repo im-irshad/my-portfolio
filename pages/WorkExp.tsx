@@ -8,6 +8,10 @@ const WorkExp = () => {
       initial={{ x: "100vw" }}
       animate={{ x: 0 }}
       transition={{ type: "spring", delay: 0.5 }}
+      exit={{
+        x: "-100vw",
+        transition: { ease: "easeOut" },
+      }}
       className="px-4 pt-1"
     >
       <div className="p-4 my-5 bg-gray-300 flex-grow">

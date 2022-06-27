@@ -19,6 +19,17 @@ const Sidebar = () => {
   const themeToggler = () => {
     setTheme(theme === "light" ? "dark" : "light");
   };
+  const linkVariants = {
+    // visible: {
+    // x: [0, -20, 20, -20, 20, 0],
+    // transition: { delay: 2 },
+    //  },
+    hover: {
+      scale: [1, 1.1, 1, 1.1, 1, 1.1],
+      textShadow: "0px 0px 8px rgb(0,0,0)",
+      boxShadow: "0px 0px 8px rgb(0,0,0)",
+    },
+  };
   return (
     <div>
       <Image
@@ -28,27 +39,52 @@ const Sidebar = () => {
         height={200}
         className="w-32 h-32 rounded-full mx-auto"
       />
-      <motion.h3 className="my-4 text-3xl text-yellow font-medium tracking-wider font-Courgette">
+      <motion.h3
+        variants={linkVariants}
+        animate="visible"
+        whileHover="hover"
+        className="my-4 text-3xl text-yellow font-medium tracking-wider font-Courgette"
+      >
         <span className="text-dblue">Irshad </span>
         Muhammad
       </motion.h3>
-      <p className="px-2 py-1 my-3 bg-gray-300 rounded-full text-dblue">
+      <motion.p
+        variants={linkVariants}
+        animate="visible"
+        whileHover="hover"
+        className="px-2 py-1 my-3 bg-gray-300 rounded-full text-dblue"
+      >
         Full-Stack Developer
-      </p>
+      </motion.p>
       <Link href="/">
-        <a className="flex items-center justify-around py-1 px-2 my-3 bg-gray-300 rounded-full text-bblue">
+        <motion.a
+          variants={linkVariants}
+          animate="visible"
+          whileHover="hover"
+          className="flex items-center justify-around py-1 px-2 my-3 bg-gray-300 rounded-full text-bblue"
+        >
           <FaDownload className="h-6 w-6 text-orange" />
           <h6>Download Resume</h6>
-        </a>
+        </motion.a>
       </Link>
       <Link href="/">
-        <a className="flex items-center text-orange justify-center py-1 px-2 my-3 bg-gray-300 rounded-full">
+        <motion.a
+          variants={linkVariants}
+          animate="visible"
+          whileHover="hover"
+          className="flex items-center text-orange justify-center py-1 px-2 my-3 bg-gray-300 rounded-full"
+        >
           <GrGithub className="h-8 w-8 mr-4 cursor-pointer" />
           <GrLinkedin className="h-8 w-8 ml-4 cursor-pointer" />
-        </a>
+        </motion.a>
       </Link>
 
-      <div className="my-5 py-4 bg-gray-300 rounded-3xl">
+      <motion.div
+        variants={linkVariants}
+        animate="visible"
+        whileHover="hover"
+        className="my-5 py-4 bg-gray-300 rounded-3xl"
+      >
         <div className="flex items-center justify-center py-2 ">
           <MdLocationOn className="w-8 h-8 text-orange" />
           <h6 className="text-bblue">Copenhagen, DK</h6>
@@ -61,7 +97,7 @@ const Sidebar = () => {
           <ImMobile className="w-8 h-8 text-orange" />
           +4560888636
         </p>
-      </div>
+      </motion.div>
       <motion.button
         animate={{
           rotateZ: 360,
